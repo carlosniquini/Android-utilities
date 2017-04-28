@@ -9,7 +9,7 @@ Shell Script to convert user app to system app. Require root.
 - Create the file outside sdcard directoty.
 - Using an Android Terminal:
 ```
-chmod 0755 makesystemapp.sh
+chmod 0755 makeSystemapp.sh
 ./makeSystemapp.sh [app code-name]
 ```
 - After run, your device will restart.
