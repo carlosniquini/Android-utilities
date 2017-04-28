@@ -11,6 +11,7 @@ Shell Script to convert user app to system app. Require root.
 
 ```
 chmod 0755 makesystemapp.sh
+./makeSystemapp.sh [app code-name]
 ```
 - After run, your device will restart.
 
@@ -33,5 +34,6 @@ adb root
 adb shell
 cd /data/local/
 chmod 0755 makesystemapp.sh
+./makeSystemapp.sh [app code-name]
 ```
 - After run, your device will restart.
