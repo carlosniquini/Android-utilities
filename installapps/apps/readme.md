@@ -1,1 +1,1 @@
-### Place the .apk file here.
+### Place the .apk files here.
