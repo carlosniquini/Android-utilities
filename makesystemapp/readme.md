@@ -6,8 +6,8 @@ Shell Script to convert user app to system app. Require root.
 
 ### 1º option
 - You can create the shell script in your device using UNIX/OSX format.
-- Create the file outside sdcard directoty.
-- Using an Android Terminal:
+- Create the file outside sdcard directory.
+- Using an Android terminal emulator :
 ```
 chmod 0755 makeSystemapp.sh
 ./makeSystemapp.sh [app code-name]
@@ -16,7 +16,7 @@ chmod 0755 makeSystemapp.sh
 
 ### 2º option
 - Connect your Android device to your PC.
-	- You can use adb over wifi by enable this option in you device and type in prompt
+	- You can use adb over wifi by enabling this option in you device and typing in prompt
 	```
 	adb connect [ip address]:5555
 	```
@@ -28,7 +28,7 @@ adb push makeSystemapp.sh /data/local/
 ```
 adb root
 ```
-- Open the android shell:
+- Open the adb shell:
 ```
 adb shell
 cd /data/local/
@@ -36,3 +36,11 @@ chmod 0755 makesystemapp.sh
 ./makeSystemapp.sh [app code-name]
 ```
 - After run, your device will restart.
+
+### Example
+We install cerberus over Play Store and now we want do make it a system app.
+```
+./makeSystemapp.sh cerberus
+```
+Pay attention in the app code-name. Sometimes it can be different from app name.
+For Google Allo, for example, the code-name is 'fireball'.
